@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="Input_Form.UserControls.MyTextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" d:DesignWidth="200" d:Background="White" Name="myTextbox">
+
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="MyBoolToVisibilityConverter" />
+    </UserControl.Resources>
+
+    <StackPanel Margin="20 10">
+        <TextBlock Text="{Binding Path=Caption,ElementName=myTextbox}" Foreground="#97A5B4" FontSize="13" Margin="0 0 0 8"/>
+
+        <Grid>
+            <TextBlock Margin="13 0" VerticalAlignment="Center" Foreground="#868686" IsHitTestVisible="False" Panel.ZIndex="1"
+                   Text="{Binding Path=Hint,ElementName=myTextbox}" FontSize="14"
+                   Visibility="{Binding ElementName=textBox, Path=Text.IsEmpty, Converter={StaticResource MyBoolToVisibilityConverter}}" />
+
+            <TextBox Name="textBox"/>
+        </Grid>
+    </StackPanel>
+
+</UserControl>

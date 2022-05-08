@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Input Form", "Input Form.csproj", "{9BAF3F4E-CA81-41D1-BC8C-DE3162A72E0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BAF3F4E-CA81-41D1-BC8C-DE3162A72E0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BAF3F4E-CA81-41D1-BC8C-DE3162A72E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BAF3F4E-CA81-41D1-BC8C-DE3162A72E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BAF3F4E-CA81-41D1-BC8C-DE3162A72E0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D91CE9C-6D8E-418E-9434-74C0BC2CC5FE}
+	EndGlobalSection
+EndGlobal
